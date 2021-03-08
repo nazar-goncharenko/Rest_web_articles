@@ -15,7 +15,7 @@ public class MainController {
     @Autowired
     UserService userService;
 
-    @GetMapping("/")
+    @GetMapping
     public List<User> index(){
         return userService.getAll();
     }
@@ -24,6 +24,5 @@ public class MainController {
     public ModelAndView login(){
         return new ModelAndView("login");
     }
-
 
 }

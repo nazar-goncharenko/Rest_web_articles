@@ -1,0 +1,35 @@
+body {
+  background-attachment: fixed;
+  height: 100%;
+  background-color: #020024;
+  background-image: linear-gradient(16deg, #020024 0%, #adadc4 45%, #ededed 100%); }
+  @media screen and (min-device-width: 500px) {
+    body .container {
+      height: 35em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center; }
+      body .container label {
+        font-family: "Open Sans";
+        font-size: 20px; }
+        body .container label input {
+          font-size: 20px;
+          background: none;
+          outline: none;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+          font-family: "Open Sans"; }
+          body .container label input:focus {
+            font-family: "Open Sans"; }
+      body .container button {
+        margin: 5px;
+        align-content: center;
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: black;
+        color: white; } }
+
+/*# sourceMappingURL=login.css.map */

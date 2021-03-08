@@ -1,0 +1,53 @@
+
+$collor_1 : #808080;
+$collor_2 : #2f2f2f;
+$font : 'Open Sans';
+
+body {
+  background-attachment: fixed;
+  height: 100%;
+  background-color: rgb(2, 0, 36);
+  background-image: linear-gradient(16deg, rgba(2, 0, 36, 1) 0%, rgba(173, 173, 196, 1) 45%, rgba(237, 237, 237, 1) 100%);
+
+  @media screen and (min-device-width: 500px) {
+
+    .container {
+      height: 35em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+
+      label {
+        font-family: $font;
+        font-size: 20px;
+
+        input {
+          font-size: 20px;
+          background: none;
+          outline: none;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+          font-family: $font;
+
+          &:focus {
+            font-family: $font;
+          }
+        }
+      }
+
+      button {
+        margin: 5px;
+        align-content: center;
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
+
+
