@@ -10,6 +10,10 @@ body {
       align-items: center;
       justify-content: center;
       align-content: center; }
+      body .container ul {
+        list-style: none; }
+      body .container logout, body .container error {
+        text-align: center; }
       body .container label {
         font-family: "Open Sans";
         font-size: 20px; }

@@ -1,7 +1,6 @@
-
-$collor_1 : #808080;
-$collor_2 : #2f2f2f;
-$font : 'Open Sans';
+$collor_1: #808080;
+$collor_2: #2f2f2f;
+$font: 'Open Sans';
 
 body {
   background-attachment: fixed;
@@ -17,6 +16,15 @@ body {
       align-items: center;
       justify-content: center;
       align-content: center;
+
+
+      ul{
+        list-style: none;
+      }
+
+      logout, error{
+        text-align: center;
+      }
 
       label {
         font-family: $font;

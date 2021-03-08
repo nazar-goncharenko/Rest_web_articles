@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/profile.css}"/>
+</head>
+<body>
+<header th:insert="fragments/header.html :: header"></header>
+
+<div class="profile-box">
+    <div class="profile-content">
+        <div class="grid-container">
+            <div class="photo">
+                <img th:src="@{photo/}">
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <label>User name</label>
+                    </li>
+                    <li>
+                        <span>Name</span>
+                    </li>
+                    <li>
+                        <label>User name</label>
+                    </li>
+                    <li>
+                        <span>Name</span>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
