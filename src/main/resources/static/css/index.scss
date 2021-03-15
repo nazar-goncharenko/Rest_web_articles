@@ -1,81 +1,62 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(2, 0, 36);
-  background-image: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(173, 173, 196, 1) 37%, rgba(173, 173, 196, 1) 73%, rgba(237, 237, 237, 1) 100%);
-}
+@media screen and (min-device-width: 768px) {
+  .my_container {
+    width: 100%;
+    flex-grow: 1;
+    max-height: 300px;
+    border-radius: 35px 35px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    box-shadow: inset 0px -190px 190px -50px rgba(255, 255, 255, 0.97);
 
-.main {
-  display: flex;
-  padding: 70px;
-  flex-grow: 1;
+    a {
+      color: black;
+      text-decoration: none;
 
-  .content-box {
-    margin: 30px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-
-    @media screen and (min-device-width: 700px) {
-      .container {
-        margin: 15px;
-        padding: 10px;
-        width: 27%;
-        flex-grow: 1;
-        max-height: 250px;
-        border-radius: 35px 35px 20px 20px;
-        background-color: rgba(255, 255, 209, 0.1);
+      h2 {
+        font-size: 150%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         overflow: hidden;
-        box-shadow: inset 0px -190px 190px -50px rgba(255, 255, 209, 0.99);
-
-        a {
-          color: black;
-          text-decoration: none;
-          h2 {
-            font-size: 150%;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-          }
-        }
-
-        h4 {
-          position: relative;
-          z-index: -1;
-        }
-
       }
     }
 
-    @media screen and (max-device-width: 700px) {
-      .container {
-        padding-top: 40px;
-        margin-top: 100px;
-        float: none;
-        width: 100%;
-        border-color: #f3ffa6;
-        border-radius: 30px;
-        background-color: rgba(255, 255, 209, 0.1);
+    h4 {
+      position: relative;
+      z-index: -1;
+    }
+
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  .my_container {
+    padding-top: 40px;
+    margin-top: 100px;
+    float: none;
+    width: 100%;
+    border-color: #f3ffa6;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      h2 {
+        font-size: 250%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         overflow: hidden;
-
-
-        a {
-          color: black;
-          text-decoration: none;
-
-          h2 {
-            font-size: 250%;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-          }
-        }
-
-        h4 {
-          position: relative;
-          z-index: -1;
-        }
       }
+    }
+
+    h4 {
+      position: relative;
+      z-index: -1;
     }
   }
 }
+
+

@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
       lang="en">
-<head>
-    <meta charset="UTF-8">
+<head th:insert="fragments/header :: head">
+    <link rel="stylesheet" th:href="@{/css/index.css}">
     <title>Title</title>
-    <link rel="stylesheet" th:href="@{/css/profile.css}"/>
 </head>
-<body>
-<header th:insert="fragments/header.html :: header"></header>
+<body class="d-flex h-100 text-center text-white bg-dark">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header th:insert="fragments/header.html :: header"></header>
 
-<div class="profile-box">
-    <div class="profile-content">
-        <div class="grid-container">
-            <div class="photo">
-                <img th:src="@{photo/}">
+    <div class="container mt-5 pt-5">
+        <div class="row pt-5 border border-white rounded">
+            <div class="col-sm-2">
+                <img class="img-fluid"
+                     src="https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png" width="300px"
+                     height="auto">
             </div>
-            <div class="info">
-                <ul>
-                    <li>
-                        <label>User name</label>
-                    </li>
-                    <li>
-                        <span>Name</span>
-                    </li>
-                    <li>
-                        <label>User name</label>
-                    </li>
-                    <li>
-                        <span>Name</span>
-                    </li>
-
-
-                </ul>
-
+            <div class="col-sm-9 mt-4">
+                <div class="row-sm">
+                    <div class="h3 text-left bg-light text-dark">User name</div>
+                </div>
+                <div class="row-sm">
+                    <H3 class="h4 text-left bg-light text-dark">John Wick</H3>
+                </div>
+                <div class="row-sm">
+                    <H2 class="h3 text-left bg-light text-dark">Email</H2>
+                </div>
+                <div class="row-sm">
+                    <H3 class="h4 text-left bg-light text-dark">example@mail.com</H3>
+                </div>
+                <div class="row-sm">
+                    <H2 class="h3 text-left bg-light text-dark">Create time</H2>
+                </div>
+                <div class="row-sm">
+                    <H3 class="h4 text-left bg-light text-dark">12.03.2020</H3>
+                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
